@@ -1,18 +1,22 @@
 <!-- Hero Section -->
 <p align="center">
+  <img src="isharah - logo - png.png" alt="Isharah Logo" width="200"/>
+</p>
+
+<p align="center">
   <img src="Isharah_samples_b.png" alt="Isharah Signers Banner" width="100%" />
 </p>
 
-<h1 align="center">Isharah Dataset</h1>
+<h1 align="center">Isharah Continuous Sign Language Recognition and Translation Dataset</h1>
 
 <p align="center">
   <em>Gloss and Arabic Annotation</em><br>
-  <strong>The first large-scale Continuous Saudi Sign Language (SSL) dataset</strong>
+  <strong>The first large-scale continuous Saudi Sign Language (SSL) dataset</strong>
 </p>
 
 <p align="center">
   <a href="#download">Download Sample</a> •
-  <a href="https://arxiv.org/abs/2504.01666" target="_blank">Read the Paper</a> •
+  <a href="" target="_blank">Read the Paper</a> •
   <a href="#contact">Contact</a>
 </p>
 
@@ -20,12 +24,11 @@
 
 ## 🧾 About
 
-**Isharah** is a large-scale dataset for Continuous Saudi Sign Language (SSL) recognition and translation. It features over 30,000 video samples signed by deaf and hearing-impaired individuals across diverse settings in Saudi Arabia. The dataset supports both **Continuous Sign Language Recognition (CSLR)** and **Sign Language Translation (SLT)** tasks.
+**Isharah** is a large-scale dataset for Continuous Saudi Sign Language (SSL) recognition and translation. It features over 30,000 video samples signed by deaf and hearing-impaired individuals captured using smartphones across diverse settings. The dataset supports both **Continuous Sign Language Recognition (CSLR)** and **Sign Language Translation (SLT)** tasks.
 
 It includes:
 - Sentence-level **gloss annotations**  
 - Corresponding **Arabic translations**  
-- Diverse signer representation (gender, clothing, recording setup)  
 - Three benchmark subsets: **Isharah-500**, **Isharah-1000**, and **Isharah-2000**
 
 ---
@@ -43,10 +46,10 @@ It includes:
 
 ## 🔬 Tasks Supported
 
-- **Continuous Sign Language Recognition (CSLR)**  
-- **Sign Language Translation (SLT)**  
-- Signer-independent and Unseen Sentence evaluation protocols  
-- Benchmark-ready splits
+- **Continuous Sign Language Recognition (CSLR)**
+- Signer-independent and Unseen Sentence evaluation protocols 
+- **Sign Language Translation (SLT)**
+- Gloss-based and gloss-free evaluation protocols 
 
 ---
 ## 🔗 Download
@@ -59,8 +62,8 @@ We are currently preparing the dataset files for public release. The download li
 - 🔗 [Isharah-2000 (coming soon)](#)
 
 
-
 ## 📄 Citation
 
 If you use Isharah in your work, please cite:
+
 
