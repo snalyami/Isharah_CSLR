@@ -49,6 +49,16 @@ It includes:
 - Benchmark-ready splits
 
 ---
+## 🔗 Download
+
+We are currently preparing the dataset files for public release. The download links for Isharah-500, Isharah-1000, and Isharah-2000 will be available here soon.
+
+### 📦 Planned Downloads:
+- 🔗 [Isharah-500 (coming soon)](#)
+- 🔗 [Isharah-1000 (coming soon)](#)
+- 🔗 [Isharah-2000 (coming soon)](#)
+
+
 
 ## 📄 Citation
 
