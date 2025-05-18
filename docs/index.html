@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isharah Dataset</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    header, section {
+      text-align: center;
+      padding: 2em 1em;
+    }
+    img.logo {
+      width: 200px;
+    }
+    img.banner {
+      width: 100%;
+      max-width: 960px;
+      height: auto;
+    }
+    h1 {
+      margin-top: 0.5em;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    table {
+      margin: 2em auto;
+      width: 90%;
+      max-width: 960px;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #dee2e6;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    .download-links {
+      list-style-type: none;
+      padding: 0;
+    }
+    .download-links li {
+      margin: 0.5em 0;
+    }
+    footer {
+      margin-top: 2em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="isharah - logo - png.png" alt="Isharah Logo" class="logo"/>
+    <br><br>
+    <img src="Isharah_samples_b.png" alt="Isharah Signers Banner" class="banner"/>
+    <h1>Isharah Continuous Sign Language Recognition and Translation Dataset</h1>
+    <p><em>Gloss and Arabic Annotation</em></p>
+    <p><strong>The first large-scale continuous Saudi Sign Language (SSL) dataset</strong></p>
+    <nav>
+      <a href="#download">Download Sample</a> •
+      <a href="#" target="_blank">Read the Paper</a> •
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>🧾 About</h2>
+    <p>
+      <strong>Isharah</strong> is a large-scale dataset for Continuous Saudi Sign Language (SSL) recognition and translation.
+      It features over <strong>30,000 video samples</strong> signed by deaf and hearing-impaired individuals using smartphones in varied settings.
+    </p>
+    <p>
+      The dataset supports both <strong>Continuous Sign Language Recognition (CSLR)</strong> and
+      <strong>Sign Language Translation (SLT)</strong>, and includes:
+    </p>
+    <ul style="text-align: left; max-width: 960px; margin: auto;">
+      <li>Sentence-level <strong>gloss annotations</strong></li>
+      <li>Corresponding <strong>Arabic translations</strong></li>
+      <li>Three benchmark subsets: <strong>Isharah-500</strong>, <strong>Isharah-1000</strong>, and <strong>Isharah-2000</strong></li>
+    </ul>
+  </section>
+
+  <section id="subsets">
+    <h2>📁 Subsets</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subset</th>
+          <th>Samples</th>
+          <th>Sentences</th>
+          <th>Gloss Vocab</th>
+          <th>Text Vocab</th>
+          <th>Signers</th>
+          <th>Duration (h)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Isharah-500</td><td>7,500</td><td>500</td><td>388</td><td>785</td><td>15</td><td>10.14</td></tr>
+        <tr><td>Isharah-1000</td><td>15,000</td><td>1,000</td><td>685</td><td>1,496</td><td>16</td><td>24.14</td></tr>
+        <tr><td>Isharah-2000</td><td>30,000</td><td>2,000</td><td>1,132</td><td>2,700</td><td>18</td><td>43.19</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="tasks">
+    <h2>🔬 Tasks Supported</h2>
+    <ul style="text-align: left; max-width: 960px; margin: auto;">
+      <li><strong>Continuous Sign Language Recognition (CSLR)</strong></li>
+      <li>Signer-independent and Unseen Sentence evaluation protocols</li>
+      <li><strong>Sign Language Translation (SLT)</strong></li>
+      <li>Gloss-based and gloss-free evaluation protocols</li>
+    </ul>
+  </section>
+
+  <section id="download">
+    <h2>🔗 Download</h2>
+    <p>We are currently preparing the dataset files for public release. The download links will be available soon.</p>
+    <ul class="download-links">
+      <li>🔗 <a href="#">Isharah-500 (coming soon)</a></li>
+      <li>🔗 <a href="#">Isharah-1000 (coming soon)</a></li>
+      <li>🔗 <a href="#">Isharah-2000 (coming soon)</a></li>
+    </ul>
+  </section>
+
+  <section id="citation">
+    <h2>📄 Citation</h2>
+    <p>If you use Isharah in your work, please cite:</p>
+    <pre>
+}
+    </pre>
+  </section>
+
+  <footer id="contact">
+    <p>For inquiries or collaboration, contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </footer>
+
+</body>
+</html>
