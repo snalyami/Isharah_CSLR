@@ -17,17 +17,21 @@ Isharah provides gloss-level and Arabic textual annotations, enabling work in bo
   - Gloss-level annotations for CSLR  
   - Arabic sentence annotations for SLT  
 
+<p align="center">
+  <img src="samples.png" width="800">
+</p>
+
 ---
 
-## 📑 Paper and Documentation  
+## 📑 Paper  
 
-For detailed methodology, benchmark experiments, and analysis, please refer to our paper:  
+For detailed dataset design, annotation protocol, benchmark results, and analysis, please refer to:
 
-- [**Isharah: A Large-Scale Dataset for Continuous Saudi Sign Language Recognition and Translation**](https://arxiv.org/abs/2506.03615) (arXiv 2025)  
+- **IEEE Transactions on Multimedia (Official Version)**  
+  https://ieeexplore.ieee.org/document/11397217  
 
-Additional details and dataset resources can be found on the official project page:  
-
-- [**Project Website**](https://snalyami.github.io/Isharah_CSLR/)  
+- **arXiv Preprint Version**  
+  https://arxiv.org/abs/2506.03615
 
 
 ---
@@ -37,12 +41,13 @@ Additional details and dataset resources can be found on the official project pa
 If you use the Isharah dataset in your research, please cite:  
 
 ```bibtex
-@misc{alyami2025isharahlargescalemultiscenedataset,
-      title={Isharah: A Large-Scale Multi-Scene Dataset for Continuous Sign Language Recognition}, 
-      author={Sarah Alyami and Hamzah Luqman and Sadam Al-Azani and Maad Alowaifeer and Yazeed Alharbi and Yaser Alonaizan},
-      year={2025},
-      eprint={2506.03615},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2506.03615}, 
-}
+@ARTICLE{11397217,
+  author={Alyami, Sarah and Luqman, Hamzah and Al-Azani, Sadam and Alowaifeer, Maad and Alharbi, Yazeed and Alonaizan, Yaser},
+  journal={IEEE Transactions on Multimedia}, 
+  title={Isharah: A Large-Scale Multi-Scene Dataset for Continuous Sign Language Recognition}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-9},
+  keywords={Sign language;Videos;Annotations;Translation;Recording;Smart phones;Benchmark testing;Weather;Cameras;Assistive technologies;Sign Language Recognition;Continuous Sign Language Recognition;Sign Language Translation;Arabic Sign Language;Sign Language Dataset},
+  doi={10.1109/TMM.2026.3664959}}
