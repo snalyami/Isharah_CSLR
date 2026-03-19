@@ -22,6 +22,13 @@ Isharah provides gloss-level and Arabic textual annotations, enabling work in bo
 </p>
 
 ---
+## 🌐 Dataset Website & Download  
+
+All dataset resources, including download links, annotations, and detailed stats, are available at:  
+
+🔗 https://snalyami.github.io/Isharah_CSLR/  
+
+---
 
 ## 📑 Paper  
 
