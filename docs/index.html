@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Isharah Dataset</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,63 +14,119 @@
       background-color: #fcf9f5;
       color: #212529;
     }
+
     header, section {
       text-align: center;
       padding: 1em 1em;
     }
+
     img.logo {
       width: 200px;
     }
+
     img.banner {
       width: 100%;
       max-width: 960px;
       height: auto;
     }
+
     h1 {
       margin-top: 0.5em;
     }
+
     nav a {
       margin: 0 10px;
       color: #23567B;
       text-decoration: none;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     table {
       margin: 2em auto;
       width: 90%;
       max-width: 960px;
       border-collapse: collapse;
     }
+
     table, th, td {
       border: 1px solid #dee2e6;
     }
+
     th, td {
       padding: 10px;
       text-align: center;
     }
+
     .download-links {
       list-style-type: none;
       padding: 0;
       color: #23567B;
     }
+
     .download-links li {
       margin: 0.5em 0;
     }
+
     .card {
-  background-color: #ffffff;
-  padding: 1em;
-  max-width: 80rem;
-  margin: 1em auto; /* ⬅ centers the block */
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
+      background-color: #ffffff;
+      padding: 1em;
+      max-width: 80rem;
+      margin: 1em auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Challenge cards */
+    .challenge-container {
+      display: flex;
+      gap: 1.5em;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5em;
+    }
+
+    .challenge-card {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 1.5em;
+      width: 360px;
+      max-width: 90%;
+      text-align: left;
+    }
+
+    .challenge-card h3 {
+      margin-top: 0;
+      color: #23567B;
+      text-align: center;
+    }
+
+    .challenge-card ul {
+      padding-left: 1.5em;
+    }
+
+    .challenge-card li {
+      margin: 0.6em 0;
+    }
+
+    .challenge-card a {
+      color: #23567B;
+      text-decoration: none;
+    }
+
+    .challenge-card a:hover {
+      text-decoration: underline;
+    }
+
     #citation pre {
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
     footer {
       margin-top: 2em;
       text-align: center;
@@ -77,91 +134,287 @@
       color: #6c757d;
     }
   </style>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
-  <header>
-    <img src="isharah - logo - png.png" alt="Isharah Logo" class="logo"/>
-    <br><br>
-    <img src="Isharah_samples_b.png" alt="Isharah Signers Banner" class="banner"/>
-    <h1>Isharah Continuous Sign Language Recognition and Translation Dataset</h1>
- 
-    <p><strong>The first large-scale continuous Saudi Sign Language (SSL) dataset</strong></p>
-    <nav>
-      <a target="_blank" href="https://drive.google.com/drive/folders/1rWb4SKT1GqA5Y6_S_0Vb-H9AaX1kBSWf?usp=drive_link">Download Sample</a> •
-      <a href="https://ieeexplore.ieee.org/document/11397217" target="_blank">Official Paper</a> • <a href="https://arxiv.org/abs/2506.03615" target="_blank">arXiv Paper</a> •
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <img src="isharah - logo - png.png"
+       alt="Isharah Logo"
+       class="logo"/>
 
-  <section id="about">
-    <div class="card">
-    <h2>🧾 About</h2>
-    <p>
-      <strong>Isharah</strong> is a large-scale dataset for Continuous Saudi Sign Language (SSL) recognition and translation.
-      It features over <strong>30,000 video samples</strong> signed by deaf and hearing-impaired individuals using smartphones in varied settings.
-    </p>
-    <p>
-      The dataset supports both <strong>Continuous Sign Language Recognition (CSLR)</strong> and
-      <strong>Sign Language Translation (SLT)</strong>, and includes Sentence-level <strong>gloss annotations</strong> and Corresponding <strong>Arabic translations</strong>. 
-      
-      Three benchmark subsets are included: <strong>Isharah-500</strong>, <strong>Isharah-1000</strong>, and <strong>Isharah-2000</strong>.
+  <br><br>
+
+  <img src="Isharah_samples_b.png"
+       alt="Isharah Signers Banner"
+       class="banner"/>
+
+  <h1>Isharah Continuous Sign Language Recognition and Translation Dataset</h1>
+
+  <p>
+    <strong>The first large-scale continuous Saudi Sign Language (SSL) dataset</strong>
   </p>
-    </div>
-  </section>
-<section id="dashboard">
-  <iframe 
-  src="https://isharah-dataset.lovable.app" 
-  width="100%" 
-  height="950px" 
-  frameborder="0">
-</iframe>
+
+  <nav>
+    <a target="_blank"
+       href="https://drive.google.com/drive/folders/1rWb4SKT1GqA5Y6_S_0Vb-H9AaX1kBSWf?usp=drive_link">
+       Download Sample
+    </a> •
+
+    <a href="https://ieeexplore.ieee.org/document/11397217"
+       target="_blank">
+       Official Paper
+    </a> •
+
+    <a href="https://arxiv.org/abs/2506.03615"
+       target="_blank">
+       arXiv Paper
+    </a> •
+
+    <a href="#challenges">
+       Related Challenges
+    </a> •
+
+    <a href="#contact">
+       Contact
+    </a>
+  </nav>
+</header>
+
+
+<section id="about">
+  <div class="card">
+
+    <h2>🧾 About</h2>
+
+    <p>
+      <strong>Isharah</strong> is a large-scale dataset for Continuous Saudi
+      Sign Language (SSL) recognition and translation.
+      It features over <strong>30,000 video samples</strong> signed by deaf and
+      hearing-impaired individuals using smartphones in varied settings.
+    </p>
+
+    <p>
+      The dataset supports both
+      <strong>Continuous Sign Language Recognition (CSLR)</strong> and
+      <strong>Sign Language Translation (SLT)</strong>, and includes
+      sentence-level <strong>gloss annotations</strong> and corresponding
+      <strong>Arabic translations</strong>.
+
+      Three benchmark subsets are included:
+      <strong>Isharah-500</strong>,
+      <strong>Isharah-1000</strong>, and
+      <strong>Isharah-2000</strong>.
+    </p>
+
+  </div>
 </section>
-  
+
+
+<section id="dashboard">
+  <iframe
+    src="https://isharah-dataset.lovable.app"
+    width="100%"
+    height="950px"
+    frameborder="0">
+  </iframe>
+</section>
+
+
 <section id="download">
   <div class="card">
+
     <h2>🔗 Download</h2>
+
     <ul class="download-links">
-      <li>🔗 <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/Eh7RgEkWgZpBiAMHlon7H2UBj5Gm8yTpJNfyXyKl_KzFtQ?e=GGsfHq" target="_blank">Isharah-500</a></li>
-      <li>🔗 <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/IgCjI10M6malQ5OYJfd2GzT3AW_xnFsGfAOK2ZrLYzWTYdA?e=ulklZC" target="_blank">Isharah-1000</a></li>
-      <li>🔗 <a href="#">Isharah-2000 (coming soon)</a></li>
-      <li></li>
-      <li>🔗 <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/IgD5xy32TLlsR61_s8eJApO_Aa6xdE_BPfqo3_7X8ocWaWo?e=dc8xV0" target="_blank">Pose Data</a></li>
+
+      <li>
+        🔗
+        <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/Eh7RgEkWgZpBiAMHlon7H2UBj5Gm8yTpJNfyXyKl_KzFtQ?e=GGsfHq"
+           target="_blank">
+           Isharah-500
+        </a>
+      </li>
+
+      <li>
+        🔗
+        <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/IgCjI10M6malQ5OYJfd2GzT3AW_xnFsGfAOK2ZrLYzWTYdA?e=ulklZC"
+           target="_blank">
+           Isharah-1000
+        </a>
+      </li>
+
+      <li>
+        🔗
+        <a href="#">
+          Isharah-2000 (coming soon)
+        </a>
+      </li>
+
+      <li>
+        🔗
+        <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/IgD5xy32TLlsR61_s8eJApO_Aa6xdE_BPfqo3_7X8ocWaWo?e=dc8xV0"
+           target="_blank">
+           Pose Data
+        </a>
+      </li>
+
     </ul>
   </div>
 </section>
 
-  <section id="citation">
-    <div class="card">
+
+<!-- Related Challenges Section -->
+<section id="challenges">
+  <div class="card">
+
+    <h2>🏆 Related Challenges</h2>
+
+    <p>
+      Isharah has been used in the <strong>SignEval</strong> challenges for
+      benchmarking continuous sign language recognition and related
+      sign language understanding tasks.
+    </p>
+
+    <div class="challenge-container">
+
+      <!-- SignEval 2026 -->
+      <div class="challenge-card">
+
+        <h3>SignEval 2026</h3>
+
+        <p>
+          <strong>Multi-Modal Sign Language Recognition and Translation Challenge</strong>
+        </p>
+
+        <ul>
+          <li>
+            🌐
+            <a href="https://m-slrt.github.io/MSLR2026/"
+               target="_blank">
+               Challenge Website
+            </a>
+          </li>
+
+          <li>
+            📂
+            <a href="https://www.kaggle.com/datasets/gufransabri3/mslr-task1"
+               target="_blank">
+               Task 1 Dataset
+            </a>
+          </li>
+
+          <li>
+            📂
+            <a href="https://www.kaggle.com/datasets/gufransabri3/mslr-task2"
+               target="_blank">
+               Task 2 Dataset
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- SignEval 2025 -->
+      <div class="challenge-card">
+
+        <h3>SignEval 2025</h3>
+
+        <p>
+          <strong>Multi-Modal Sign Language Recognition Challenge at ICCV 2025</strong>
+        </p>
+
+        <ul>
+          <li>
+            🌐
+            <a href="https://multimodal-sign-language-recognition.github.io/ICCV-2025/"
+               target="_blank">
+               Challenge Website
+            </a>
+          </li>
+
+          <li>
+            📂
+            <a href="https://udksa-my.sharepoint.com/:f:/g/personal/snalyami_iau_edu_sa/IgAFjLwgs_7eTomwTglLIl5qAdIGtednGdc0-Ub-a-g43GE?e=wgoVIb"
+               target="_blank">
+               Challenge Dataset
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="citation">
+  <div class="card">
+
     <h2>📄 Citation</h2>
+
     <p>If you use Isharah in your work, please cite:</p>
+
     <pre>
 @ARTICLE{11397217,
   author={Alyami, Sarah and Luqman, Hamzah and Al-Azani, Sadam and Alowaifeer, Maad and Alharbi, Yazeed and Alonaizan, Yaser},
-  journal={IEEE Transactions on Multimedia}, 
-  title={Isharah: A Large-Scale Multi-Scene Dataset for Continuous Sign Language Recognition}, 
+  journal={IEEE Transactions on Multimedia},
+  title={Isharah: A Large-Scale Multi-Scene Dataset for Continuous Sign Language Recognition},
   year={2026},
   volume={},
   number={},
   pages={1-9},
   keywords={Sign Language Recognition;Continuous Sign Language Recognition;Sign Language Translation;Arabic Sign Language;Sign Language Dataset},
   doi={10.1109/TMM.2026.3664959}}
-
     </pre>
-    </div>
-  </section>
+
+  </div>
+</section>
+
+
 <div class="card">
+
   <footer id="contact">
-    <p>For inquiries or collaboration, contact: <a href="mailto:snalyami@iau.edu.sa">snalyami@iau.edu.sa</a> or <a href="mailto:hluqman@kfupm.edu.sa">hluqman@kfupm.edu.sa</a></p>
-        <!-- Visitor Counter Start -->
-      <div style="margin-top:1em; text-align:center;">
-  <p style="font-size: small; color: #6c757d;">Page visits:</p>
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=21166029&style=0006&nbdigits=5&type=page&initCount=100" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>         
+
+    <p>
+      For inquiries or collaboration, contact:
+      <a href="mailto:snalyami@iau.edu.sa">
+        snalyami@iau.edu.sa
+      </a>
+      or
+      <a href="mailto:hluqman@kfupm.edu.sa">
+        hluqman@kfupm.edu.sa
+      </a>
+    </p>
+
+    <!-- Visitor Counter Start -->
+    <div style="margin-top:1em; text-align:center;">
+
+      <p style="font-size: small; color: #6c757d;">
+        Page visits:
+      </p>
+
+      <a href="https://www.hitwebcounter.com"
+         target="_blank">
+
+        <img
+          src="https://hitwebcounter.com/counter/counter.php?page=21166029&style=0006&nbdigits=5&type=page&initCount=100"
+          title="Counter Widget"
+          alt="Visit counter For Websites"
+          border="0" />
+
+      </a>
+
     </div>
     <!-- Visitor Counter End -->
+
   </footer>
+
 </div>
 
 </body>
